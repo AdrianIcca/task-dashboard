@@ -1,0 +1,11 @@
+<div class="task">
+  <h3 class="titulo">{{ task.name }}</h3>
+  <p class="detalles">{{ task.description }}</p>
+  <div class="checkbox" (click)="toggleTask()">
+    @if (task.completed()) {
+      ✘
+    } @else {
+      ✔
+    }
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<h1>Bienvenido a TaskDashboard</h1>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <label>
+    <p>Username</p>
+    <input formControlName="username" placeholder="Username" type="text" id="username" required>
+  </label>
+  <label>
+    <p>Password</p>
+    <input formControlName="password" placeholder="Password" type="password" id="password" required>
+  </label>
+  <button type="submit">Iniciar Sesión</button>
+</form>
+<p *ngIf="errorMessage" style="color: red;" class="error-message">{{ errorMessage }}</p>

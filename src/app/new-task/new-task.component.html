@@ -1,0 +1,11 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <label>
+      <p>Title:</p>
+      <input formControlName="name" placeholder="name" type="text" id="name" required>
+    </label>
+    <label>
+      <p>Description:</p>
+      <textarea formControlName="description" placeholder="description" type="description" id="description" required></textarea>
+    </label>
+    <button type="submit">Add task</button>
+  </form>

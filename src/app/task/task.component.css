@@ -1,0 +1,30 @@
+.task {
+    background-color: rgb(145, 145, 0);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.task:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.checkbox {
+    font-weight: bold;
+    text-align: right;
+    user-select: none;
+}

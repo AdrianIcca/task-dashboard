@@ -1,0 +1,15 @@
+<button (click)="logout()" class="logout">Log out</button>
+
+<h2>Welcome admin!</h2>
+<div class="buttons">
+    <button class="add" (click)="toogleNewTask()" >Create new task</button>
+    <button class="type" (click)="toggleShowCompleted()">{{ showCompleted ? 'See pending tasks' : 'See completed tasks' }}</button>
+</div>
+<div class="tasks">
+    @for (task of tasks; track task.id) {
+        @if (task.completed() == showCompleted) {
+        <app-task [task]="task"></app-task>
+        }
+    }
+</div>
+@if (newTask()) {<app-new-task class="newTask" (newTaskData)="recieveData($event)"></app-new-task>}

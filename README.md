@@ -57,3 +57,26 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+# 🚀 1. Dashboard de Gestión de Tareas (Nivel: Básico - Intermedio)
+
+## 📌 Tecnologías clave:
+✅ Angular 19 (Standalone Components)
+✅ Signals para manejo de estado
+✅ Angular Material para UI
+✅ LocalStorage para persistencia
+
+## 📖 Funcionalidades:
+🔹 Agregar, editar y eliminar tareas
+🔹 Marcar tareas como completadas
+🔹 Filtrar tareas por estado
+🔹 Guardar tareas en LocalStorage
+
+## 🔥 Características Angular 19:
+✔ Uso de Standalone Components en lugar de módulos
+✔ Implementación de Signals para manejar la reactividad
+✔ Uso de Lazy Loading para mejorar rendimiento
+
+## 🌟 Mejoras futuras:
+🔹 Implementar gestión de tareas (delete, move, dateDue)
+🔹 Implementar gestión de usuarios (register, bbdd)
