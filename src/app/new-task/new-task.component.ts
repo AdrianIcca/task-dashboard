@@ -21,7 +21,12 @@ export class NewTaskComponent {
   }
 
   onSubmit() {
-    this.newTaskData.emit(this.loginForm.value);
-    console.log("Datos enviados a componente padre: ", this.loginForm.value);
+    const data = {name: this.loginForm.value.name,description: this.loginForm.value.description, created: true}; 
+    if (data.name != '' && data.description != '') {
+      this.newTaskData.emit(data);
+      this.errorMessage = '';
+    } else {
+      this.errorMessage = 'Name and description cannot be empty...';
+    }
   }
 }

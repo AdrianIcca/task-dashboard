@@ -41,13 +41,14 @@ export class DashboardComponent {
       description: data.description,
       completed: signal(false)
     };
-    console.log("Datos recibidos: ", data);
+    if (data.created) {
+      this.newTask.set(false);
+    }
     this.createTask(task);
   }
 
   createTask(task: Task) {
     this.tasks.push(task);
-    console.log("Tarea creada: ", task);
   }
 
   trackById(index: number, task: Task): number {
